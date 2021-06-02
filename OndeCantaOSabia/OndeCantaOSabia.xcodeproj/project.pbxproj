@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A776182A2667F86F00C05832 /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77618292667F86F00C05832 /* HowToPlayView.swift */; };
+		A776182C2667F8B500C05832 /* PlayerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776182B2667F8B500C05832 /* PlayerSelectionView.swift */; };
+		A776182E2667F8ED00C05832 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776182D2667F8ED00C05832 /* MainScreenView.swift */; };
+		A77618302667F91300C05832 /* AmountOfPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776182F2667F91300C05832 /* AmountOfPlayersView.swift */; };
+		A77618322667F92600C05832 /* BoardgameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77618312667F92600C05832 /* BoardgameView.swift */; };
+		A77618362667F97000C05832 /* DiceRollingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77618352667F97000C05832 /* DiceRollingOverlayView.swift */; };
+		A77618382667F98300C05832 /* TriviaOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77618372667F98300C05832 /* TriviaOverlayView.swift */; };
+		A776183A2667F9A300C05832 /* ChallengeOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77618392667F9A300C05832 /* ChallengeOverlayView.swift */; };
+		A776183C2667F9DD00C05832 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776183B2667F9DD00C05832 /* GameState.swift */; };
+		A7FA89D12667F58F00FE99D6 /* OndeCantaOSabiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA89D02667F58F00FE99D6 /* OndeCantaOSabiaApp.swift */; };
+		A7FA89D32667F58F00FE99D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA89D22667F58F00FE99D6 /* ContentView.swift */; };
+		A7FA89D52667F59000FE99D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FA89D42667F59000FE99D6 /* Assets.xcassets */; };
+		A7FA89D82667F59000FE99D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FA89D72667F59000FE99D6 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A77618292667F86F00C05832 /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
+		A776182B2667F8B500C05832 /* PlayerSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelectionView.swift; sourceTree = "<group>"; };
+		A776182D2667F8ED00C05832 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		A776182F2667F91300C05832 /* AmountOfPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOfPlayersView.swift; sourceTree = "<group>"; };
+		A77618312667F92600C05832 /* BoardgameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardgameView.swift; sourceTree = "<group>"; };
+		A77618352667F97000C05832 /* DiceRollingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollingOverlayView.swift; sourceTree = "<group>"; };
+		A77618372667F98300C05832 /* TriviaOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaOverlayView.swift; sourceTree = "<group>"; };
+		A77618392667F9A300C05832 /* ChallengeOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOverlayView.swift; sourceTree = "<group>"; };
+		A776183B2667F9DD00C05832 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		A7FA89CD2667F58F00FE99D6 /* OndeCantaOSabia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OndeCantaOSabia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FA89D02667F58F00FE99D6 /* OndeCantaOSabiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OndeCantaOSabiaApp.swift; sourceTree = "<group>"; };
+		A7FA89D22667F58F00FE99D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7FA89D42667F59000FE99D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7FA89D72667F59000FE99D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7FA89D92667F59000FE99D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7FA89CA2667F58F00FE99D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A77618282667F84B00C05832 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A77618292667F86F00C05832 /* HowToPlayView.swift */,
+				A776182B2667F8B500C05832 /* PlayerSelectionView.swift */,
+				A776182D2667F8ED00C05832 /* MainScreenView.swift */,
+				A776182F2667F91300C05832 /* AmountOfPlayersView.swift */,
+				A77618312667F92600C05832 /* BoardgameView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A77618332667F94D00C05832 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				A77618352667F97000C05832 /* DiceRollingOverlayView.swift */,
+				A77618372667F98300C05832 /* TriviaOverlayView.swift */,
+				A77618392667F9A300C05832 /* ChallengeOverlayView.swift */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		A77618342667F95900C05832 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A77618332667F94D00C05832 /* Overlays */,
+				A77618282667F84B00C05832 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7FA89C42667F58F00FE99D6 = {
+			isa = PBXGroup;
+			children = (
+				A7FA89CF2667F58F00FE99D6 /* OndeCantaOSabia */,
+				A7FA89CE2667F58F00FE99D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7FA89CE2667F58F00FE99D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA89CD2667F58F00FE99D6 /* OndeCantaOSabia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7FA89CF2667F58F00FE99D6 /* OndeCantaOSabia */ = {
+			isa = PBXGroup;
+			children = (
+				A77618342667F95900C05832 /* Views */,
+				A7FA89D02667F58F00FE99D6 /* OndeCantaOSabiaApp.swift */,
+				A776183B2667F9DD00C05832 /* GameState.swift */,
+				A7FA89D22667F58F00FE99D6 /* ContentView.swift */,
+				A7FA89D42667F59000FE99D6 /* Assets.xcassets */,
+				A7FA89D92667F59000FE99D6 /* Info.plist */,
+				A7FA89D62667F59000FE99D6 /* Preview Content */,
+			);
+			path = OndeCantaOSabia;
+			sourceTree = "<group>";
+		};
+		A7FA89D62667F59000FE99D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA89D72667F59000FE99D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7FA89CC2667F58F00FE99D6 /* OndeCantaOSabia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7FA89DC2667F59000FE99D6 /* Build configuration list for PBXNativeTarget "OndeCantaOSabia" */;
+			buildPhases = (
+				A7FA89C92667F58F00FE99D6 /* Sources */,
+				A7FA89CA2667F58F00FE99D6 /* Frameworks */,
+				A7FA89CB2667F58F00FE99D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OndeCantaOSabia;
+			productName = OndeCantaOSabia;
+			productReference = A7FA89CD2667F58F00FE99D6 /* OndeCantaOSabia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7FA89C52667F58F00FE99D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A7FA89CC2667F58F00FE99D6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A7FA89C82667F58F00FE99D6 /* Build configuration list for PBXProject "OndeCantaOSabia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7FA89C42667F58F00FE99D6;
+			productRefGroup = A7FA89CE2667F58F00FE99D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7FA89CC2667F58F00FE99D6 /* OndeCantaOSabia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7FA89CB2667F58F00FE99D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FA89D82667F59000FE99D6 /* Preview Assets.xcassets in Resources */,
+				A7FA89D52667F59000FE99D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7FA89C92667F58F00FE99D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77618362667F97000C05832 /* DiceRollingOverlayView.swift in Sources */,
+				A776182A2667F86F00C05832 /* HowToPlayView.swift in Sources */,
+				A776182E2667F8ED00C05832 /* MainScreenView.swift in Sources */,
+				A776183A2667F9A300C05832 /* ChallengeOverlayView.swift in Sources */,
+				A7FA89D32667F58F00FE99D6 /* ContentView.swift in Sources */,
+				A77618322667F92600C05832 /* BoardgameView.swift in Sources */,
+				A776182C2667F8B500C05832 /* PlayerSelectionView.swift in Sources */,
+				A77618382667F98300C05832 /* TriviaOverlayView.swift in Sources */,
+				A77618302667F91300C05832 /* AmountOfPlayersView.swift in Sources */,
+				A7FA89D12667F58F00FE99D6 /* OndeCantaOSabiaApp.swift in Sources */,
+				A776183C2667F9DD00C05832 /* GameState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A7FA89DA2667F59000FE99D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Debug;
+		};
+		A7FA89DB2667F59000FE99D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7FA89DD2667F59000FE99D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OndeCantaOSabia/Preview Content\"";
+				DEVELOPMENT_TEAM = QS23PKCUZD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OndeCantaOSabia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.erickalmeida.OndeCantaOSabia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Debug;
+		};
+		A7FA89DE2667F59000FE99D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OndeCantaOSabia/Preview Content\"";
+				DEVELOPMENT_TEAM = QS23PKCUZD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OndeCantaOSabia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.erickalmeida.OndeCantaOSabia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7FA89C82667F58F00FE99D6 /* Build configuration list for PBXProject "OndeCantaOSabia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7FA89DA2667F59000FE99D6 /* Debug */,
+				A7FA89DB2667F59000FE99D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7FA89DC2667F59000FE99D6 /* Build configuration list for PBXNativeTarget "OndeCantaOSabia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7FA89DD2667F59000FE99D6 /* Debug */,
+				A7FA89DE2667F59000FE99D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7FA89C52667F58F00FE99D6 /* Project object */;
+}
