@@ -9,7 +9,28 @@ import SwiftUI
 
 struct MainScreenView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            GeometryReader { geometry in
+                ZStack(alignment: .center) {
+                    Image("MainScreenBackground")
+                        .resizable()
+                        .aspectRatio(geometry.size, contentMode: .fill)
+                        .edgesIgnoringSafeArea(.all)
+                    VStack {
+                        Image("Logo").padding(.bottom, 48)
+                        HStack {
+                            NavigationLink(destination: AmountOfPlayersView()) {
+                                Text("Nova partida")
+                            }
+                            
+                            NavigationLink(destination: HowToPlayView()) {
+                                Text("Como jogar")
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

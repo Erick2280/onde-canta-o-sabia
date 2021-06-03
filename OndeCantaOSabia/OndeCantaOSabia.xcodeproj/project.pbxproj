@@ -16,6 +16,7 @@
 		A77618382667F98300C05832 /* TriviaOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77618372667F98300C05832 /* TriviaOverlayView.swift */; };
 		A776183A2667F9A300C05832 /* ChallengeOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77618392667F9A300C05832 /* ChallengeOverlayView.swift */; };
 		A776183C2667F9DD00C05832 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776183B2667F9DD00C05832 /* GameState.swift */; };
+		A7C19C9D266945E400E6F6BC /* Eudora.otf in Resources */ = {isa = PBXBuildFile; fileRef = A7C19C9C266945E400E6F6BC /* Eudora.otf */; };
 		A7FA89D12667F58F00FE99D6 /* OndeCantaOSabiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA89D02667F58F00FE99D6 /* OndeCantaOSabiaApp.swift */; };
 		A7FA89D32667F58F00FE99D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA89D22667F58F00FE99D6 /* ContentView.swift */; };
 		A7FA89D52667F59000FE99D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FA89D42667F59000FE99D6 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		A77618372667F98300C05832 /* TriviaOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaOverlayView.swift; sourceTree = "<group>"; };
 		A77618392667F9A300C05832 /* ChallengeOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOverlayView.swift; sourceTree = "<group>"; };
 		A776183B2667F9DD00C05832 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		A7C19C9C266945E400E6F6BC /* Eudora.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eudora.otf; sourceTree = "<group>"; };
 		A7FA89CD2667F58F00FE99D6 /* OndeCantaOSabia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OndeCantaOSabia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FA89D02667F58F00FE99D6 /* OndeCantaOSabiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OndeCantaOSabiaApp.swift; sourceTree = "<group>"; };
 		A7FA89D22667F58F00FE99D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		A7C19C9B266945CF00E6F6BC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A7C19C9C266945E400E6F6BC /* Eudora.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		A7FA89C42667F58F00FE99D6 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		A7FA89CF2667F58F00FE99D6 /* OndeCantaOSabia */ = {
 			isa = PBXGroup;
 			children = (
+				A7C19C9B266945CF00E6F6BC /* Fonts */,
 				A77618342667F95900C05832 /* Views */,
 				A7FA89D02667F58F00FE99D6 /* OndeCantaOSabiaApp.swift */,
 				A776183B2667F9DD00C05832 /* GameState.swift */,
@@ -179,6 +190,7 @@
 			files = (
 				A7FA89D82667F59000FE99D6 /* Preview Assets.xcassets in Resources */,
 				A7FA89D52667F59000FE99D6 /* Assets.xcassets in Resources */,
+				A7C19C9D266945E400E6F6BC /* Eudora.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
