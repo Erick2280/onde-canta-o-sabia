@@ -14,7 +14,7 @@ public enum AmountOfPlayers: Int {
     case six = 6
 }
 
-public enum PlayerAvatar: String {
+public enum PlayerAvatar: String, CaseIterable {
     case Isabella
     case Benji
     case Juli
@@ -23,7 +23,13 @@ public enum PlayerAvatar: String {
     case Ryan
 }
 
-public class Game {
+public enum SquareType {
+    case challenge
+    case trivia
+    case move(squares: Int)
+}
+
+public class Game: ObservableObject {
     let challengeCards: [ChallengeCard] = [
         ChallengeCard(
             name: "Boto Cor-de-Rosa",
@@ -49,7 +55,7 @@ public class Game {
             name: "Comadre Fulozinha",
             imageName: "ComadreFulozinhaCard",
             description: "Muitas vezes confundida com a Caipora, a Comadre Fulozinha protege as florestas e assusta quem sai pela mata sem deixar-lhe uma oferenda.",
-            challenge: "Chegue perto de uma planta e fale 3x \"Comadre Fulozinha\"."),
+            challenge: "Chegue perto de uma planta e fale 3x \"Comadre Fulozinha\""),
         ChallengeCard(
             name: "Loira do Banheiro",
             imageName: "LoiraDoBanheiroCard",
@@ -133,8 +139,8 @@ public class Game {
     ]
     
     let amountOfPlayers: AmountOfPlayers
-    var players: [Player]
-    var nowPlaying: Int
+    @Published var players: [Player]
+    @Published var nowPlaying: Int
     
     public init (amountOfPlayers: AmountOfPlayers, players: [PlayerAvatar]) {
         self.amountOfPlayers = amountOfPlayers
@@ -147,12 +153,12 @@ public class Game {
     }
     
     public func goToNextPlayer() {
-        self.nowPlaying = self.nowPlaying + 1 % self.amountOfPlayers.rawValue
+        self.nowPlaying = (self.nowPlaying + 1) % self.amountOfPlayers.rawValue
     }
     
     public func rollDice() -> Int {
         let diceRoll = Int.random(in: 1...6)
-        players[nowPlaying].position += diceRoll
+        // players[nowPlaying].position += diceRoll
         return diceRoll;
     }
     
@@ -170,23 +176,42 @@ public class Game {
         let randomNumber = Int.random(in: 0...9)
         
         if (randomNumber >= 0 && randomNumber < 6) {
-            return SquareType.Trivia
+            return SquareType.trivia
         }
         
         if (randomNumber >= 6 && randomNumber < 9) {
-            return SquareType.Challenge
+            return SquareType.challenge
         }
         
         
         let moveRandomNumber = Int.random(in: -3...3)
-        return SquareType.Move(squares: moveRandomNumber)
+        if (moveRandomNumber == 0) {
+            return SquareType.move(squares: 1)
+        }
+        return SquareType.move(squares: moveRandomNumber)
+    }
+    
+    public func getOffsetForPlayerPosition(player: Player) -> Int {
+        var offset = 0
+        
+        for globalPlayer in players {
+            if (player.avatar != globalPlayer.avatar && player.position == globalPlayer.position) {
+                offset += 10
+            }
+            
+            if (player.avatar == globalPlayer.avatar) {
+                break
+            }
+        }
+        
+        return offset
     }
     
 }
 
-public class Player {
+public class Player: ObservableObject {
     public let avatar: PlayerAvatar
-    public var position: Int
+    @Published public var position: Int
     
     public init(avatar: PlayerAvatar) {
         self.avatar = avatar
@@ -205,10 +230,4 @@ public struct TriviaQuestion {
     let question: String
     let alternatives: [String]
     let answer: Int
-}
-
-public enum SquareType {
-    case Challenge
-    case Trivia
-    case Move(squares: Int)
 }

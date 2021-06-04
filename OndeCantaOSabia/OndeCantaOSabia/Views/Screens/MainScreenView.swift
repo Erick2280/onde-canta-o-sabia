@@ -26,7 +26,7 @@ struct MainScreenView: View {
                             NavigationLink(destination: HowToPlayView()) {
                                 Text("Como jogar")
                             }
-                        }
+                        }.font(.system(size: 48, weight: .semibold, design: .rounded))
                     }
                 }
             }
