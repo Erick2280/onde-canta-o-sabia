@@ -60,8 +60,8 @@ struct BoardgameView: View {
                         .scaledToFit()
                         .frame(height: 60)
                         .animation(.easeInOut)
-                        .padding(.top, fromTopCoordinates[player.position])
-                        .padding(.leading, fromLeadingCoordinates[player.position] + CGFloat(gameState.getOffsetForPlayerPosition(player: player)))
+                        .padding(.top, (player.position > 27) ? fromTopCoordinates[27] : fromTopCoordinates[player.position])
+                        .padding(.leading, (player.position > 27) ? (fromLeadingCoordinates[27] + CGFloat(gameState.getOffsetForPlayerPosition(player: player))) : (fromLeadingCoordinates[player.position] + CGFloat(gameState.getOffsetForPlayerPosition(player: player))))
                 }
                 
                 if (!showOverlay) {
